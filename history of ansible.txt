@@ -1,0 +1,429 @@
+    1  ifstat
+    2  nmcli
+    3  ifstat
+    4  nmcli connection show
+    5  hostnamectl set-hostname server
+    6  exec bash
+    7  firewall-config
+    8  semanage port -a -t ssh_port_t -p tcp 1200
+    9  semanage port -1
+   10  semanage port-1
+   11  semanage port -1
+   12  semanage port -l
+   13  semanage port -l | grep ssh
+   14  ls -lz /etc/fstab
+   15  ls -l /etc/fstab
+   16  ls -ldz /etc/fstab
+   17  ls -lz nikhil
+   18  firewall-cmd --permanent --remove-port=1200/tcp
+   19  firewall-cmd --reload
+   20  firewall-cmd --list-port
+   21  firewall-cmd --permanent --add-port=22/tcp
+   22  firewall-cmd --reload
+   23  firewall-cmd --list-port
+   24  history
+   25  clear
+   26  rpm -q bind
+   27  rpm -ivh bind
+   28  yum install binf
+   29  yum install bind
+   30  yum clean all
+   31  yum repolist all
+   32  cd /etc/yum.repos.d/
+   33  ls
+   34  rm -rf *
+   35  ls
+   36  vim rhel.repo
+   37  lsblk
+   38  vim /etc/fstab
+   39  mount -a
+   40  yum repolist al
+   41  yum repolist all
+   42  yum clean all
+   43  cat rhel.repo 
+   44  lsblk
+   45  mount -a
+   46  mkdir /mnt/rhel
+   47  mount -a
+   48  yum repoolist all
+   49  yum repolist all
+   50  cd
+   51  yum install bind
+   52  systemctl restart named
+   53  systemctl enable named
+   54  firewall-cmd --permanent --add-port=53/tcp
+   55  firewall-cmd --permanent --add-port=53/udp
+   56  firewall-cmd --permanent --add-service=dns
+   57  firewall-cmd --reload
+   58  vim /etc/named.conf
+   59  cd /var/named/
+   60  ll
+   61  touch pukhraj
+   62  chgrp named pukhraj 
+   63  ll
+   64  cp named.localhost pukhraj 
+   65  vim pukhraj 
+   66  systemctl restart named
+   67  cd
+   68  ip addr
+   69  nmcli connection add type ethernet con-name server ifname ens33 
+   70  ifconfig ens33
+   71  nmcli connection up server 
+   72  ifconfig ens33
+   73  nmcli connection up server 
+   74  ifconfig ens33
+   75  nmcli connection delete server 
+   76  nmcli connection add type ethernet con-name server ifname ens33 
+   77  ifconfig ens33
+   78  vim /var/named/pukhraj 
+   79  systemctl restart named
+   80  ifconfig ens33
+   81  vim /etc/resolv.conf 
+   82  nslookup www.google.com
+   83  cat /etc/named.conf 
+   84  cat /var/named/pukhraj 
+   85  ls
+   86  vim dns_server
+   87  vim /var/named/pukhraj 
+   88  systemctl restart named
+   89  nslookup www.google.com
+   90  nslookup mail.google.com
+   91  vim /var/named/pukhraj 
+   92  systemctl restart named
+   93  vim /var/named/pukhraj 
+   94  systemctl restart named
+   95  vim /var/named/pukhraj 
+   96  history
+   97  userdel -r roo
+   98  ls
+   99  cp dns_server /home/roo/Desktop/
+  100  history
+  101  vim /etc/named.conf
+  102  vim /etc/resolv.conf
+  103  nslookup www.google.com
+  104  vim /etc/named.conf
+  105  vim /etc/resolv.conf
+  106  ifconfig ens33
+  107  vim /etc/named.conf
+  108  ifconfig ens33
+  109  vim /etc/named.conf
+  110  cp named. pukhraj
+  111  cd /
+  112  touch pukhraj
+  113  cd /etc/named.config
+  114  cd /etc/named.conf
+  115  cd /etc
+  116  ls
+  117  cp -vf /etc/named.conf/ /pukhraj
+  118  cp -vf /etc/named.conf /pukhraj
+  119  cd /
+  120  ls
+  121  cat pukhraj'
+  122  cat pukhraj
+  123  vim pukhraj
+  124  cd /etc
+  125  ls
+  126  cd named
+  127  ls
+  128  ll
+  129  grep named.localhosts
+  130  firewall-config
+  131  cd 
+  132  vim /etc/named.conf
+  133  lsblk
+  134  ifconfig ens33
+  135  nmcli c
+  136  nmcli connection delete server 
+  137  nmcli c
+  138  nmcli connection delete ens33 
+  139  nmcli c
+  140  nmcli connection add type ethernet con-name server ifname ens33 
+  141  ifconfig ens33
+  142  ipcinfig
+  143  ifconfig
+  144  ping 8.8.8.8
+  145  hostnamectl set-hostname himanshu
+  146  exec bash
+  147  ping 8.8.8.8
+  148  yum repolist all
+  149  cd /etc/yum.repos.d/
+  150  ls
+  151  rm -rf *
+  152  ls
+  153  vim online.repo
+  154  yum repolist all
+  155  yum install ansible
+  156  yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  157  yum repolist all
+  158  yum install ansible
+  159  ansible --version
+  160  cd
+  161  python --version
+  162  cd /etc/ansible/
+  163  ls
+  164  vim hosts
+  165  ansible -m ping all
+  166  ssh root@manish
+  167  vim /etc/hosts
+  168  ssh root@manish
+  169  ssh root@garima
+  170  ssh-keygen
+  171  ssh-copy-id root@garim
+  172  ssh-copy-id root@garima
+  173  ssh root@garima
+  174  ssh root@manish
+  175  ssh -keygen
+  176  ssh-keygen
+  177  ssh-keygen 
+  178  ssh-copy-id root@manish
+  179  ssh root@manish
+  180  cd
+  181  vim .ssh/
+  182  vim .ssh/known_hosts 
+  183  ssh root@manish
+  184  ssh-copy-id root@manish
+  185  ssh root@manish
+  186  vim .ssh/known_hosts 
+  187  vim /etc/hosts
+  188  ping garima
+  189  ssh root@garima
+  190  ssh-copy-id root@manish
+  191  ssh-copy-id root@garima
+  192  ssh root@garima
+  193  ping garima
+  194  ifconfig ens333
+  195  ifconfig ens33
+  196  ssh root@garima
+  197  cd .ssh
+  198  ls
+  199  rm -rf known_hosts 
+  200  rm -rf *
+  201  ls
+  202  cd
+  203  ssh root@garima
+  204  ssh-keygen
+  205  ssh-copy-id root@garima
+  206  ssh root@garima
+  207  ansible -m ping all
+  208  vim /etc/hosts
+  209  vim /etc/ansible/hosts 
+  210  ansible -m ping all
+  211  ansible -m ping garima
+  212  vim kushal
+  213  ansible -m ping -i kushal
+  214  ansible -m ping -i /root/kushal
+  215  ansible -m ping all -i /root/kushal
+  216  cd /etc/ansible/
+  217  ls
+  218  cat hosts
+  219  ssh root@192.168.43.46
+  220  vim /etc/ansible/hosts 
+  221  ansible -m ping all
+  222  cd
+  223  vim /etc/ansible/hosts 
+  224  ansible -m ping webserver
+  225  vim /etc/ansible/hosts 
+  226  ansible -m ping dbserver
+  227  vim /etc/ansible/hosts 
+  228  ansible -m ping manish
+  229  vim /etc/ansible/hosts 
+  230  ansible -m ping webserver
+  231  ansible-doc -l
+  232  ansible-doc ping
+  233  ansible-doc setup
+  234  ansible -m setup webserver
+  235  ansible -m setup webserver | less
+  236  ssh root@garima
+  237  ansible -m ping webserver
+  238  ansible -m ping webserver -k
+  239  vim /etc/ansible/ansible.cfg 
+  240  ansible -m ping webserver
+  241  vim /etc/ansible/ansible.cfg 
+  242  ansible -m ping webserver -k
+  243  ssh-copy-id root@garima
+  244  ansible -m ping webserver
+  245  ansible-doc setup
+  246  ansible webserver -m file -a "path=/etc/fstab"
+  247  ansible-doc file
+  248  ansible webserver -m file -a "path=/etc/fstab mode=777"
+  249  ansible webserver -m file -a "path=/etc/fstab mode=644"
+  250  vim /etc/ansible/ansible.cfg 
+  251  ansible-doc -l | wc -l
+  252  history
+  253  ssh root@192.168.43.46
+  254  cat  /etc/sysconfig/selk
+  255  cat  /etc/sysconfig/selinux 
+  256  ansible -m ping webserver
+  257  ip addr
+  258  nmcli connection up server 
+  259  ip addr
+  260  ping 8.8.8.8
+  261  ansible -m ping webserver
+  262  vim /etc/hosts
+  263  ping garima
+  264  ping 192.168.43.46
+  265  ansible -m ping webserver
+  266  vim /etc/hosts
+  267  ansible -m ping webserver
+  268  vim /etc/hosts
+  269  ansible -m ping webserver
+  270  vim /etc/host
+  271  vim /etc/hosts
+  272  vim /etc/ansible/hosts 
+  273  ansible -m ping webserver
+  274  ssh root@192.168.43.46
+  275  ssh-copy-id root@192.168.43.46
+  276  ansible -m ping webserver
+  277  ansible-doc file
+  278  ansible webserver -m file -a "path=/garima.txt state=touch"
+  279  ansible webserver -m file -a "path=/garima.txt state=touch mode=777"
+  280  ansible-doc file
+  281  touch kushal
+  282  ls
+  283  vim kushal
+  284  ansible webserver -m file -a "src=kushal dest=/kushal"
+  285  ansible -m ping webserver
+  286  ping 192.168.43.46
+  287  ansible -m ping webserver
+  288  ansible -m ping 192.168.43.46
+  289  ping 192.168.43.46
+  290  ansible -m ping 192.168.43.46
+  291  ssh root@192.168.43.46
+  292  ansible -m ping 192.168.43.46
+  293  ansible webserver -m file -a "src=kushal dest=/kushal"
+  294  ansible webserver -m file -a "src=kushal dest=/kushal state=touch"
+  295  ansible-doc file
+  296  ansible-doc copy
+  297  ansible webserver -m copy -a "src=kushal dest=/kushal"
+  298  ansible webserver command -a "systemctl status sshd.service"
+  299  ansible webserver -m command -a "systemctl status sshd.service"
+  300  ansible webserver -m command -a "touch /manish"
+  301  ansible-doc lineinfile
+  302  ansible webserver -m lineinfile -a "path=/manish line='kushalsamota'"
+  303  ansible webserver -m lineinfile -a "path=/manish line='kushalsamotasachinyadav'"
+  304  ansible-doc lineinfile
+  305  vim /etc/selinux/config 
+  306  ansible webserver -m lilneinfile -a "path=/etc/selinux/config regexp='^SELINUX=' line='SELINUX=permissive'"
+  307  ansible-doc lineinfile
+  308  ansible webserver -m lilneinfile -a "path=/etc/selinux/config regexp=''^SELINUX='' line='SELINUX=permissive'"
+  309  ansible webserver -m lineinfile -a "path=/etc/selinux/config regexp='^SELINUX=' line='SELINUX=permissive'"
+  310  ansible -m command -a "grep SELINUX /etc/sysconfig/selinux" webserver
+  311  ansible webserver -m lineinfile -a "path=/etc/selinux/config regexp='^SELINUX=' line='SELINUX=permissive'"
+  312  ansible -m command -a "grep SELINUX /etc/sysconfig/selinux" webserver
+  313  ansible webserver -m lineinfile -a "path=/etc/selinux/config regexp='^SELINUX=' line='SELINUX=enforcing'"
+  314  ansible -m command -a "grep SELINUX /etc/sysconfig/selinux" webserver
+  315  vim /etc/resolv.conf 
+  316  ansible webserver -m lineinfile -a "path=/etc/selinux/config regexp='^nameserver=' line='nameserver=192.168.43.46'"
+  317  ansible webserver -m lineinfile -a "path=/etc/resolv.conf regexp='^nameserver=' line='nameserver=192.168.43.46'"
+  318  ansible -m command -a "cat /etc/resolv.conf" webserver
+  319  ansible-doc blockinfile
+  320  ansible webserver -m lineinfile -a "path=/manish line='kushal\nsachin\ngaurav\nrajat'"
+  321  ansible webserver -m command -a "cat /manish"
+  322  ansible webserver -m service -a "name=httpd.service state=started"
+  323  ansible webserver -m command -a "systemctl status httpd.service"
+  324  ansible webserver -m service -a "name=httpd.service state=stopped"
+  325  ansible webserver -m command -a "systemctl status httpd.service"
+  326  ansible webserver -m service -a "name=httpd.service state=started"
+  327  ansible webserver -m command -a "systemctl status httpd.service"
+  328  ansible-doc firewalld
+  329  ansible webserver -m firewalld -a "name=https permanent=yes state=enabled"
+  330  ansible-doc firewalld
+  331  ansible webserver -m firewalld -a "service=https permanent=yes state=enabled"
+  332  ansible webserver -m firewalld -a "port=/tcp permanent=yes state=enabled"
+  333  ansible webserver -m firewalld -a "port=53/tcp permanent=yes state=enabled"
+  334  ansible webserver -m yum -a "name=httpd state=present"
+  335  ansible webserver -m command -a "yum repolist all"
+  336  ansible webserver -m file -a "path=/etc/httpd/conf.d/2.conf state=touch"
+  337  ansible webserver -m lineinfile -a "path=/etc/httpd/conf.d/2.conf line='<virtualhost *:80>\n'"
+  338  ansible webserver -m file -a "path=/etc/httpd/conf.d/2.conf state=absent"
+  339  ansible webserver -m file -a "path=/etc/httpd/conf.d/2.conf state=touch"
+  340  ansible webserver -m lineinfile -a "path=/etc/httpd/conf.d/2.conf line='<virtualhost *:80>\nservername localhost\n documentroot /var/www/html\n </virtualhost>'"
+  341  ansible webserver -m command -a "cat /etc/httpd/conf.d/2.conf"
+  342  touch index.html
+  343  vim index.html 
+  344  ansible webserver -m copy -a "path=index.html dest=/var/www/html/index.html"
+  345  ansible webserver -m copy -a "src=index.html dest=/var/www/html/index.html"
+  346  ansible webserver -m service -a "name=httpd state=started"
+  347  ansible webserver -m command -a "curl localhost"
+  348  mkdir ansible
+  349  cd ansible/
+  350  touch ansible.cfg
+  351  touch hosts
+  352  vim hosts
+  353  ls
+  354  vim ansible.cfg 
+  355  ansible -m ping all
+  356  ls
+  357  cd
+  358  ansible -m ping all
+  359  cd ansible/
+  360  ls
+  361  vim ansible.cfg 
+  362  ansible -m ping all
+  363  vim ansible.cfg 
+  364  vim playbook.yml
+  365  ansible-playbook playbook.yml --syntax-check
+  366  vim playbook.yml
+  367  ls
+  368  vim hosts 
+  369  ansible-playbook playbook.yml --syntax-check
+  370  vim playbook.yml 
+  371  ansible-playbook playbook.yml --syntax-check
+  372  vim playbook.yml 
+  373  ansible-playbook playbook.yml --syntax-check
+  374  ansible-playbook playbook.yml 
+  375  ansible-playbook playbook.yml -C 
+  376  vim playbook.yml 
+  377  ansible-playbook playbook.yml -C 
+  378  vim playbook.yml 
+  379  ansible-playbook playbook.yml -C 
+  380  ansible-playbook playbook.yml
+  381  vim playbook.yml 
+  382  ansible-playbook playbook.yml
+  383  ansible-doc file
+  384  history
+  385  cd ansible/
+  386  ls
+  387  vim playbook.yml 
+  388  ansible-playbook playbook.yml -C
+  389  ansible-playbook playbook.yml
+  390  vim playbook.yml 
+  391  ansible-playbook playbook.yml
+  392  vim playbook.yml 
+  393  A
+  394  vim playbook.yml 
+  395  ansible-playbook playbook.yml
+  396  vim playbook.yml 
+  397  ansible-doc file
+  398  vim playbook.yml 
+  399  ansible-playbook playbook.yml
+  400  vim playbook.yml 
+  401  ansible-doc file
+  402  vim playbook.yml 
+  403  ansible-playbook playbook.yml
+  404  vim playbook.yml 
+  405  ansible-playbook playbook.yml
+  406  vim playbook.yml 
+  407  ansible-playbook playbook.yml
+  408  vim playbook.yml 
+  409  ansible-playbook playbook.yml
+  410  ansible webserver -m file -a "path=/etc/httpd/conf.d/1.conf state=absent"
+  411  ansible webserver -m file -a "path=/etc/httpd/conf.d/2.conf state=absent"
+  412  cd
+  413  cd ansible/
+  414  vim playbook.yml 
+  415  vim playbook.yml 
+  416  cat playbook.yml 
+  417  vim playbook.yml 
+  418  ansible-doc -l | grep lv
+  419  ansible-doc lvg
+  420  ansible-doc lvvol
+  421  ansible-doc lvol
+  422  ansible-doc pv
+  423  ansible-doc filesystem
+  424  ansible-doc mount
+  425  ansible-doc file
+  426  ansible-doc copy
+  427  cd
+  428  history
+  429  history > history.txt
