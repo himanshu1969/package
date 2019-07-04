@@ -1,0 +1,410 @@
+
+    4  cd /mnt/rhel
+    5  ls
+    6  cd /etc/yum.repos.d/
+    7  ls
+    8  vim rhel.repo
+    9  mount -a
+   10  yum clean all 
+   11  yum repolist all 
+   12  lsblk
+   13  reboot
+   14  lsblk
+   15  ping 8.8.8.8
+   16  firefox
+   17  nmcli c
+   18  nmcli connection add type ethernet con-name server ifname ens33
+   19  nmcli c
+   20  nmcli connection up server
+   21  lsblk
+   22  yum install bind
+   23  nmcli c
+   24  nmcli connection upr server
+   25  nmcli connection up server
+   26  hostnamectl set-hostname server
+   27  exec bash 
+   28  hostname
+   29  vim /etc/host
+   30  ifconfig
+   31  vim /etc/host
+   32  ping 192.168.43.149
+   33  ifconfig
+   34  ping 192.168.43.46
+   35  ifconfig
+   36  hostnamectl set-hostname garima
+   37  exec bash 
+   38  ifconfig ens33
+   39  ping 192.168.43.46
+   40  cd .ssh
+   41  ls
+   42  rm -rf *
+   43  vim /etc/resolv.conf
+   44  w
+   45  lsblk
+   46  pvs
+   47  vgs
+   48  lsblk
+   49  python --version
+   50   vim .ssh
+   51  vim .ssh
+   52  vim /root.ssh
+   53  vim /root/.ssh
+   54  ls
+   55  vim authorized_keys 
+   56  ls
+   57  vim authorized_keys 
+   58  ls -ld /etc/fstab
+   59  cd
+   60  ls
+   61  cd /etc/yum.repos.d
+   62  rm -rf*
+   63  rm -rf *
+   64  ping 8.8.8.8
+   65  ls
+   66  firefox
+   67  ls
+   68  vim online.repo
+   69  firefox
+   70  ping 8.8.8.8
+   71  ifconfig
+   72  ping 8.8.8.8
+   73  firefox
+   74  su -
+   75  nmcli c
+   76  nmcli connection up server
+   77  ping 8.8.8.8
+   78  firefox
+   79  vim /etc/yum.repos.d/centos.repo
+   80  cd /etc/yum.repos.d
+   81  ls
+   82  vim online.repo
+   83  vim /etc/yum.repos.d/online.repo
+   84  yum repolist all
+   85  yum install ansible
+   86  cd /etc/yum.repos.d
+   87  ls
+   88  cat online.repo
+   89  mount -a
+   90  lsblk
+   91  yum clean all
+   92  yum repolist all 
+   93  ls
+   94  cat redhat.repo
+   95  rm -rf*
+   96  rm -rf
+   97  ld
+   98  ls
+   99  cat online.repo
+  100  yum repolist all
+  101  yum install ansib;e
+  102  yum install ansible
+  103  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  104  yum install ansible
+  105  yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  106  yum install ansible
+  107  su -
+  108  ping 8.8.8.8
+  109  nmcli c
+  110  nmcli connection up server
+  111  yum clean all
+  112  yum repolist all
+  113  nmcli c
+  114  nmcli connection up server
+  115  yum install wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  116  yum install ansible
+  117  yum reinstall ansible
+  118  yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  119  yum reinstall ansible
+  120  yum install ansible
+  121  yum reinstall http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  122  yum install ansible
+  123  yum repolist all
+  124  ansible --versiom
+  125  ansible --version
+  126  python --version
+  127  cd /etc
+  128  ls
+  129  a
+  130  cd ansible
+  131  cd ..
+  132  yum repolist all
+  133  ansible --version
+  134  run yum --enablerepo=online.repo clean metadata
+  135  yum --enablerepo=online.repo clean metadata
+  136  yum reinstall ansible
+  137  yum install http://mirror.centos.org/centos/7/os/x86_64/repodata/repomd.xml
+  138  yum repolist all
+  139  yum install ansible
+  140  yum install http://mirror.centos.org/centos/7/os/x86_64/Packages/python-cffi-1.6.0-5.el7.x86_64.rpm
+  141  yum repolist all
+  142  yum install ansible
+  143  yum repolist all
+  144  ansible --version
+  145  vim hosts
+  146  cd /etc/ansible/
+  147  ls
+  148  vim hosts
+  149  ssh root@client
+  150  vim hosts
+  151  ssh root@client
+  152  vim hosts
+  153  ssh root@client
+  154  su -
+  155  ls -l /garima.txt 
+  156  ls /
+  157  ping 8.8.8.8
+  158  nmcli connection up server
+  159  ping 8.8.8.8
+  160  ansible -m ping all
+  161  vim /etc/ansible/hosts
+  162  ansible -m ping all
+  163  vim /etc/ansible/dns.yml
+  164  cd /etc/ansible
+  165  ls
+  166  vim dns.yml
+  167  ansible-playbook dns.yml -C
+  168  vim dns.yml
+  169  ansible-playbook dns.yml -C
+  170  ansible-playbook dns.yml 
+  171  vim dns.yml
+  172  ansible-playbook dns.yml 
+  173  vim dns.yml
+  174  ansible-playbook dns.yml 
+  175  vim dns.yml
+  176  cd / 
+  177  ls
+  178  cd /etc/ansible
+  179  ls
+  180  ll
+  181  vim dns.yml 
+  182  cp dns.yml /dns1.yml
+  183  cd / 
+  184  ls
+  185  vim dns1.yml 
+  186  cp dns1.yml /etc/ansible
+  187  cd /etc/ansible
+  188  ls
+  189  vim dns1.yml 
+  190  ansible-playbook dns1.yml 
+  191  vim dns1.yml 
+  192  ansible-playbook dns1.yml 
+  193  vim dns1.yml 
+  194  ansible-playbook dns1.yml 
+  195  vim dns1.yml 
+  196  ansible-playbook dns1.yml 
+  197  vim dns1.yml 
+  198  ansible-playbook dns1.yml 
+  199  vim dns1.yml 
+  200  ansible-playbook dns1.yml 
+  201  vim dns1.yml 
+  202  ansible-playbook dns1.yml 
+  203  vim dns1.yml 
+  204  ansible-playbook dns1.yml 
+  205  vim dns1.yml 
+  206  ip addr
+  207  ls
+  208  rm dns.yml
+  209  ls
+  210  vim dns1.yml 
+  211  ansible-playbook dns1.yml --syntax-check
+  212  ansible-playbook dns1.yml 
+  213  vim dns1.yml 
+  214  ansible-doc firewalld
+  215  vim dns1.yml 
+  216  ansible-doc firewalld
+  217  vim dns1.yml 
+  218  ansible-playbook dns1.yml 
+  219  vim dns1.yml 
+  220  ansible-doc firewalld
+  221  vim dns1.yml 
+  222  ansible-playbook dns1.yml 
+  223  vim dns1.yml 
+  224  ansible-playbook dns1.yml 
+  225  vim dns1.yml 
+  226  ip addr
+  227  ping 8.8.8.8
+  228  nmcli connection up server
+  229  vim dns1.yml 
+  230  vim hosts
+  231  ansible -m ping all
+  232  vim hosts
+  233  ansible -m ping all
+  234  ssh root@192.168.43.151
+  235  ansible -m ping all
+  236  ssh-keygen
+  237  ssh-copy-id root@192.168.43.151
+  238  ssh root@192.168.43.151
+  239  ansible -m ping webserver
+  240  ssh root@192.168.43.151
+  241  vim hosts
+  242  ansible -m ping webserver
+  243  ssh root@192.168.43.160
+  244  cd /
+  245  ssh-keygen
+  246  ssh-copy-id root@192.168.43.160
+  247  logout
+  248  ssh root@192.168.43.160
+  249  cd
+  250  cd ansi
+  251  ls
+  252  cd /etc/ansible/
+  253  ls
+  254  vim dns.yml 
+  255  vim dns1.yml 
+  256  $echo $PATH
+  257  echo $PATH
+  258  echo $SHELL
+  259  ls
+  260  vim dns1.yml 
+  261  head dns1.yml > variable.yml
+  262  vim variable.yml 
+  263  ansible-playbook variable.yml 
+  264  ip addr
+  265  ansible-playbook variable.yml 
+  266  vim /etc/ansible/hosts 
+  267  ansible-playbook variable.yml 
+  268  ssh root@192.168.43.149
+  269  ssh-copy-id root@192.168.43.149
+  270  ansible-playbook variable.yml 
+  271  ssh root@192.168.43.149
+  272  cd .ssh
+  273  ls
+  274  cd
+  275  cd .ssh/
+  276  ls
+  277  rm -rf *
+  278  ssh root@192.168.43.149
+  279  ssh-key
+  280  ssh-keygen known_hosts 
+  281  ssh-keygen
+  282  ssh-copy-id root@192.168.43.149
+  283  ansible-playbook variable.yml 
+  284  cd
+  285  cd /etc/ansible/
+  286  ansible-playbook variable.yml 
+  287  vim variable.yml 
+  288  ansible-playbook variable.yml -C
+  289  vim variable.yml 
+  290  ansible-playbook variable.yml --syntac-check
+  291  ansible-playbook variable.yml --syntax-check
+  292  vim variable.yml 
+  293  ansible-playbook variable.yml --syntax-check
+  294  vim variable.yml 
+  295  ansible-playbook variable.yml --syntax-check
+  296  vim variable.yml 
+  297  vim hosts 
+  298  ansible-playbook variable.yml --syntax-check
+  299  vim hosts 
+  300  vim variable.yml 
+  301  ansible-playbook variable.yml
+  302  vim variable.yml 
+  303  ansible-playbook variable.yml
+  304  ansible webserver -m setup 
+  305  ansible webserver -m setup  | grep hostname
+  306  vim variable.yml 
+  307  ansible-playbook variable.yml
+  308  vim variable.yml 
+  309  ansible-playbook variable.ymll
+  310  ansible-playbook variable.yml
+  311  vim variable.yml 
+  312  ansible-playbook variable.yml
+  313  ansible webserver -m setup | grep ipv4.address
+  314  vim variable.yml 
+  315* ansible webserver -m setup | grep kerne
+  316  vim variable.yml 
+  317  ansible-playbook variable.yml
+  318  vim ansible.cfg 
+  319  ansible-playbook variable.yml
+  320  vim variable.yml 
+  321  ansible-playbook variable.yml
+  322  vim ansible.cfg 
+  323  vim variable.yml 
+  324  ansible-playbook variable.yml
+  325  vim variable.yml 
+  326  vim kushal.yml
+  327  vim variable.yml 
+  328  ansible-playbook var
+  329  vim variable.yml 
+  330  ansible-playbook variable.yml
+  331  vim variable.yml 
+  332  vim kushal.yml 
+  333  ansible-playbook variable.yml
+  334  vim kushal.yml 
+  335  ansible-playbook variable.yml
+  336  vim variable.yml 
+  337  ls
+  338  vim variable.yml 
+  339  vim kushal.yml 
+  340  ansible-playbook variable.yml
+  341  vim variable.yml 
+  342  vim kushal.yml 
+  343  ansible-playbook variable.yml
+  344  vim variable.yml 
+  345  ansible-playbook variable.yml
+  346  :q!
+  347  vim playbook.yml
+  348  ansible-playbook variable.yml
+  349  vim playbook.yml
+  350  vim HOSTS
+  351  vim hosts
+  352  vim playbook.yml
+  353  ansible -m ping all
+  354  ssh root@192.168.43.160
+  355  ssh-keygen
+  356  ssh-copy-id root@192.168.43.160
+  357  logout
+  358  ssh root@192.168.43.160
+  359  cd / 
+  360  cd .ssh
+  361  cd .ssh 
+  362  ls
+  363  cd
+  364  cd .ssh
+  365  ls
+  366  rm -rf *
+  367  cd /
+  368  cd ..
+  369  cd
+  370  ssh-keygen
+  371  ssh-copy-id root@192.168.43.160
+  372  logout
+  373  ssh root@192.168.43.160
+  374  cd .ssh
+  375  ls
+  376  rm -rf *
+  377  ls
+  378  cd 
+  379  ssh-keygen
+  380  ssh-copy-id root@192.168.43.160
+  381  ssh root@192.168.43.160
+  382  ping 192.168.43.160
+  383  cd /etc/ansible
+  384  ls
+  385  ansible -m ping webserver
+  386  cd 
+  387  ssh root@192.168.43.160
+  388  ssh-keygen
+  389  ssh-copy-id root@192.168.43.160
+  390  ssh root@192.168.43.160
+  391  ssh-keygen
+  392  ssh-copy-id root@192.168.43.160
+  393  ssh root@192.168.43.160
+  394  cd .ssh
+  395  ls
+  396  cd
+  397  ssh-copy-id root@192.168.43.160
+  398  ssh root@192.168.43.160
+  399  cd .ssh
+  400  ls
+  401  rm -rf *
+  402  ssh root@192.168.43.160
+  403  ssh-copy-id root@192.168.43.160
+  404  ssh-key
+  405  ssh-keygen 
+  406  ssh-copy-id root@192.168.43.160
+  407  ssh root@192.168.43.160
+  408  cd /etc/ansible
+  409  cd
+  410  history
+:wq
+
