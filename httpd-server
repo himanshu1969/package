@@ -1,0 +1,791 @@
+rh[kiosk@foundation0 ~]$ rht-vmctl start all
+Starting desktop.
+Starting server.
+[kiosk@foundation0 ~]$ 
+[kiosk@foundation0 ~]$ ssh root@server0
+Last login: Mon Jun 17 09:07:53 2019 from 172.25.0.250
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# 
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# nslookup server0.example.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# nslookup server0.example.com
+Server:		172.25.254.254
+Address:	172.25.254.254#53
+
+Name:	server0.example.com
+Address: 172.25.0.11
+
+[root@server0 ~]# nslookup  www0.example.com
+Server:		172.25.254.254
+Address:	172.25.254.254#53
+
+www0.example.com	canonical name = server0.example.com.
+Name:	server0.example.com
+Address: 172.25.0.11
+
+[root@server0 ~]# nslookup  webserver0.example.com
+Server:		172.25.254.254
+Address:	172.25.254.254#53
+
+** server can't find webserver0.example.com: NXDOMAIN
+
+[root@server0 ~]# nslookup  webapp0.example.com
+Server:		172.25.254.254
+Address:	172.25.254.254#53
+
+webapp0.example.com	canonical name = server0.example.com.
+Name:	server0.example.com
+Address: 172.25.0.11
+
+[root@server0 ~]# 
+[root@server0 ~]# cd /etc/http/conf.d
+-bash: cd: /etc/http/conf.d: No such file or directory
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# yum install httpd httpd-manual
+Loaded plugins: langpacks
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.6-17.el7 will be installed
+--> Processing Dependency: httpd-tools = 2.4.6-17.el7 for package: httpd-2.4.6-17.el7.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.6-17.el7.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.6-17.el7.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.6-17.el7.x86_64
+---> Package httpd-manual.noarch 0:2.4.6-17.el7 will be installed
+--> Running transaction check
+---> Package apr.x86_64 0:1.4.8-3.el7 will be installed
+---> Package apr-util.x86_64 0:1.5.2-6.el7 will be installed
+---> Package httpd-tools.x86_64 0:2.4.6-17.el7 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+======================================================================================
+ Package               Arch            Version                Repository         Size
+======================================================================================
+Installing:
+ httpd                 x86_64          2.4.6-17.el7           rhel_dvd          1.2 M
+ httpd-manual          noarch          2.4.6-17.el7           rhel_dvd          1.3 M
+Installing for dependencies:
+ apr                   x86_64          1.4.8-3.el7            rhel_dvd          103 k
+ apr-util              x86_64          1.5.2-6.el7            rhel_dvd           92 k
+ httpd-tools           x86_64          2.4.6-17.el7           rhel_dvd           77 k
+ mailcap               noarch          2.1.41-2.el7           rhel_dvd           31 k
+
+Transaction Summary
+======================================================================================
+Install  2 Packages (+4 Dependent packages)
+
+Total download size: 2.8 M
+Installed size: 9.8 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/6): apr-1.4.8-3.el7.x86_64.rpm                              | 103 kB  00:00:00     
+(2/6): apr-util-1.5.2-6.el7.x86_64.rpm                         |  92 kB  00:00:00     
+(3/6): httpd-2.4.6-17.el7.x86_64.rpm                           | 1.2 MB  00:00:00     
+(4/6): httpd-tools-2.4.6-17.el7.x86_64.rpm                     |  77 kB  00:00:00     
+(5/6): mailcap-2.1.41-2.el7.noarch.rpm                         |  31 kB  00:00:00     
+(6/6): httpd-manual-2.4.6-17.el7.noarch.rpm                    | 1.3 MB  00:00:00     
+--------------------------------------------------------------------------------------
+Total                                                    1.4 MB/s | 2.8 MB  00:02     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : apr-1.4.8-3.el7.x86_64                                             1/6 
+  Installing : apr-util-1.5.2-6.el7.x86_64                                        2/6 
+  Installing : httpd-tools-2.4.6-17.el7.x86_64                                    3/6 
+  Installing : mailcap-2.1.41-2.el7.noarch                                        4/6 
+  Installing : httpd-2.4.6-17.el7.x86_64                                          5/6 
+  Installing : httpd-manual-2.4.6-17.el7.noarch                                   6/6 
+  Verifying  : httpd-manual-2.4.6-17.el7.noarch                                   1/6 
+  Verifying  : apr-1.4.8-3.el7.x86_64                                             2/6 
+  Verifying  : mailcap-2.1.41-2.el7.noarch                                        3/6 
+  Verifying  : httpd-2.4.6-17.el7.x86_64                                          4/6 
+  Verifying  : apr-util-1.5.2-6.el7.x86_64                                        5/6 
+  Verifying  : httpd-tools-2.4.6-17.el7.x86_64                                    6/6 
+
+Installed:
+  httpd.x86_64 0:2.4.6-17.el7            httpd-manual.noarch 0:2.4.6-17.el7           
+
+Dependency Installed:
+  apr.x86_64 0:1.4.8-3.el7                    apr-util.x86_64 0:1.5.2-6.el7          
+  httpd-tools.x86_64 0:2.4.6-17.el7           mailcap.noarch 0:2.1.41-2.el7          
+
+Complete!
+[root@server0 ~]# 
+[root@server0 ~]# systemctl restart httpd.service
+[root@server0 ~]# systemctl enable httpd.service
+ln -s '/usr/lib/systemd/system/httpd.service' '/etc/systemd/system/multi-user.target.wants/httpd.service'
+[root@server0 ~]# firefox localhost/manual
+
+(process:2008): GLib-CRITICAL **: g_slice_set_config: assertion `sys_page_size == 0' failed
+Error: no display specified
+[root@server0 ~]# logout
+Connection to server0 closed.
+[kiosk@foundation0 ~]$ ssh -X root@server0
+Last login: Mon Jun 17 11:55:45 2019 from 172.25.0.250
+/usr/bin/xauth:  file /root/.Xauthority does not exist
+[root@server0 ~]# firefox localhost/manual
+
+
+
+
+
+
+[root@server0 ~]# firefox localhost/manual
+
+(process:2094): GLib-CRITICAL **: g_slice_set_config: assertion `sys_page_size == 0' failed
+[root@server0 ~]# cd /etc/httpd/conf.d/
+[root@server0 conf.d]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 conf.d]# ls
+autoindex.conf  manual.conf  README  userdir.conf  welcome.conf
+[root@server0 conf.d]# vim 1.conf
+[root@server0 conf.d]# cd /var/www/html
+[root@server0 html]# vim index.html
+[root@server0 html]# systemctl restart httpd.service 
+[root@server0 html]# firefox server0.exmaple.com
+
+(process:2267): GLib-CRITICAL **: g_slice_set_config: assertion `sys_page_size == 0' failed
+^C
+[root@server0 html]# 
+
+
+
+
+
+
+
+
+
+[root@server0 html]# ls
+index.html
+[root@server0 html]# cd
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# vim /etc/httpd/conf.d/1.conf 
+[root@server0 ~]# 
+
+
+
+
+
+
+[root@server0 ~]# getenforce
+Enforcing
+[root@server0 ~]# cd /var/www/
+[root@server0 www]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 www]# ls -lZ
+drwxr-xr-x. root root system_u:object_r:httpd_sys_script_exec_t:s0 cgi-bin
+drwxr-xr-x. root root system_u:object_r:httpd_sys_content_t:s0 html
+[root@server0 www]# cd html/
+[root@server0 html]# ls -lZ
+-rw-r--r--. root root unconfined_u:object_r:httpd_sys_content_t:s0 index.html
+[root@server0 html]# cd
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# restorecon -vvFR /var/www
+restorecon reset /var/www/html/index.html context unconfined_u:object_r:httpd_sys_content_t:s0->system_u:object_r:httpd_sys_content_t:s0
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# vim /etc/httpd/conf.
+conf.d/         conf.modules.d/ 
+[root@server0 ~]# vim /etc/httpd/conf.d/1.conf 
+[root@server0 ~]# man semanage-port
+[root@server0 ~]# semanage port -a -t http_port_t -p tcp 1500
+[root@server0 ~]# systemctl restart httpd
+[root@server0 ~]# firefox server0.example.com:1500
+
+(process:2465): GLib-CRITICAL **: g_slice_set_config: assertion `sys_page_size == 0' failed
+[root@server0 ~]# 
+[root@server0 ~]# firewall-cmd --permanent --add-port=1500/tcp
+success
+[root@server0 ~]# firewall-cmd --reload
+success
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# cd /var/www/html
+[root@server0 html]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 html]# ls
+index.html
+[root@server0 html]# mkdir restrict
+[root@server0 html]# cd restrict/
+[root@server0 restrict]# vim index.html
+[root@server0 restrict]# cd ..
+[root@server0 html]# cd
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# vim /etc/httpd/conf.d/1.conf 
+[root@server0 ~]# systemctl restart httpd
+[root@server0 ~]# firefox server0.example.com/restrict:1500
+
+(process:3020): GLib-CRITICAL **: g_slice_set_config: assertion `sys_page_size == 0' failed
+[root@server0 ~]# cd
+[root@server0 ~]# vim /etc/httpd/conf.d/1.conf 
+[root@server0 ~]# ifconfig ens33
+ens33: error fetching interface information: Device not found
+[root@server0 ~]# ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    link/ether 52:54:00:00:00:0b brd ff:ff:ff:ff:ff:ff
+    inet 172.25.0.11/24 brd 172.25.0.255 scope global dynamic eth0
+       valid_lft 19496sec preferred_lft 19496sec
+    inet6 fe80::5054:ff:fe00:b/64 scope link 
+       valid_lft forever preferred_lft forever
+[root@server0 ~]# 
+[root@server0 ~]# systemctl restart httpd
+[root@server0 ~]# firefox server0.example.com:1500/restrict
+
+(process:3108): GLib-CRITICAL **: g_slice_set_config: assertion `sys_page_size == 0' failed
+[root@server0 ~]# vim /etc/httpd/conf.d/1.conf 
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# curl server0.example.com
+kushal
+[root@server0 ~]# curl server0.example.com:1500
+kushal
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# lab webapp setup
+Creating web application files...  SUCCESS
+[root@server0 ~]# cd /home/student/
+[root@server0 student]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 student]# ls
+webapp.wsgi
+[root@server0 student]# vim webapp.wsgi 
+[root@server0 student]# lsl
+bash: lsl: command not found...
+[root@server0 student]# ls
+webapp.wsgi
+[root@server0 student]# ls -lZ
+-rw-r--r--. root root unconfined_u:object_r:user_home_t:s0 webapp.wsgi
+[root@server0 student]# cp webapp.wsgi /var/www/html/
+[root@server0 student]# restorecon -vvFR /var/www
+restorecon reset /var/www/html/restrict context unconfined_u:object_r:httpd_sys_content_t:s0->system_u:object_r:httpd_sys_content_t:s0
+restorecon reset /var/www/html/restrict/index.html context unconfined_u:object_r:httpd_sys_content_t:s0->system_u:object_r:httpd_sys_content_t:s0
+restorecon reset /var/www/html/webapp.wsgi context unconfined_u:object_r:httpd_sys_content_t:s0->system_u:object_r:httpd_sys_content_t:s0
+[root@server0 student]# cd
+[root@server0 ~]# 
+
+
+[root@server0 ~]# cd /etc/httpd/conf.d/
+[root@server0 conf.d]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 conf.d]# vim 1.conf 
+[root@server0 conf.d]# systemctl restart http
+Failed to issue method call: Unit http.service failed to load: No such file or directory.
+[root@server0 conf.d]# systemctl restart httpd
+Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
+[root@server0 conf.d]# vim 1.conf 
+[root@server0 conf.d]# httpd 
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 conf.d]# httpd -t
+AH00526: Syntax error on line 14 of /etc/httpd/conf.d/1.conf:
+Invalid command 'wsgiscriptalias', perhaps misspelled or defined by a module not included in the server configuration
+[root@server0 conf.d]# yum install mod_wsgi -y
+Loaded plugins: langpacks
+Resolving Dependencies
+--> Running transaction check
+---> Package mod_wsgi.x86_64 0:3.4-11.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+====================================================================================
+ Package            Arch             Version               Repository          Size
+====================================================================================
+Installing:
+ mod_wsgi           x86_64           3.4-11.el7            rhel_dvd            76 k
+
+Transaction Summary
+====================================================================================
+Install  1 Package
+
+Total download size: 76 k
+Installed size: 197 k
+Downloading packages:
+mod_wsgi-3.4-11.el7.x86_64.rpm                               |  76 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mod_wsgi-3.4-11.el7.x86_64                                       1/1 
+  Verifying  : mod_wsgi-3.4-11.el7.x86_64                                       1/1 
+
+Installed:
+  mod_wsgi.x86_64 0:3.4-11.el7                                                      
+
+Complete!
+[root@server0 conf.d]# systemctl restart httpd
+[root@server0 conf.d]# curl webapp0
+[root@server0 conf.d]# curl webapp0.example.com
+UNIX EPOCH time is now: 1560754014.28
+[root@server0 conf.d]# date
+Mon Jun 17 12:16:58 IST 2019
+[root@server0 conf.d]# date
+Mon Jun 17 12:17:03 IST 2019
+[root@server0 conf.d]# curl webapp0.example.com
+UNIX EPOCH time is now: 1560754025.35
+[root@server0 conf.d]# 
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 conf.d]# firewall-cmd --permanent --add-port=80/tcp
+success
+[root@server0 conf.d]# firewall-cmd --reload
+success
+[root@server0 conf.d]# vim 1.conf 
+[root@server0 conf.d]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 conf.d]# vim 1.conf 
+[root@server0 conf.d]# dig server0.exmaple.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 conf.d]# dig server0.example.com
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-14.el7 <<>> server0.example.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15758
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;server0.example.com.		IN	A
+
+;; ANSWER SECTION:
+server0.example.com.	86400	IN	A	172.25.0.11
+
+;; AUTHORITY SECTION:
+example.com.		86400	IN	NS	classroom.example.com.
+
+;; ADDITIONAL SECTION:
+classroom.example.com.	86400	IN	A	172.25.254.254
+
+;; Query time: 4 msec
+;; SERVER: 172.25.254.254#53(172.25.254.254)
+;; WHEN: Mon Jun 17 12:36:58 IST 2019
+;; MSG SIZE  rcvd: 104
+
+[root@server0 conf.d]# logout
+ssh rootConnection to server0 closed.
+[kiosk@foundation0 ~]$ ssh root@classroom
+Last login: Fri Jun 14 11:40:15 2019 from provision.example.com
+^L[root@classroom ~]# 
+[root@classroom ~]# vim /etc/named.conf
+[root@classroom ~]# cd /var/named
+[root@classroom named]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@classroom named]# ls
+172.25.zone         dynamic                  named.ca         named.loopback
+172.25.zone-backup  example.com.zone         named.empty      slaves
+data                example.com.zone-backup  named.localhost
+[root@classroom named]# vim example.com.zone
+[root@classroom named]# nslookup c.example.com
+Server:		172.25.254.254
+Address:	172.25.254.254#53
+
+c.example.com	canonical name = classroom.example.com.
+Name:	classroom.example.com
+Address: 172.25.254.254
+
+[root@classroom named]# vim example.com.zone
+[root@classroom named]# vim 172.25.zone
+[root@classroom named]# vim example.com.zone
+[root@classroom named]# vim /etc/named.conf
+[root@classroom named]# 
+
+
+
+[root@classroom named]# cd
+[root@classroom ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@classroom ~]# ssh root@server0
+Warning: Permanently added 'server0,172.25.0.11' (ECDSA) to the list of known hosts.
+Last login: Mon Jun 17 11:58:45 2019 from 172.25.0.250
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@server0 ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
